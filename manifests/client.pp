@@ -14,8 +14,10 @@ class ssh::client(
 
   $merged_options = merge($ssh::params::ssh_default_options, $fin_options)
 
-  include ssh::client::install
-  include ssh::client::config
+  class { '::ssh::client::install': }
+  class { '::ssh::client::config':
+    options => $merged_options
+  }
 
   anchor { 'ssh::client::start': }
   anchor { 'ssh::client::end': }
