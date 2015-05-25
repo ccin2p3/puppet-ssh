@@ -154,7 +154,7 @@ describe 'ssh::client::config::user', :type => :define do
 
       it 'should have Hash value' do
         should contain_file("/home/#{title}/.ssh/config").with({
-          :content => /Host \*\.in2p3\.fr\s*\n\s+(User\s+riton|GSSAPIAuthentication\s+no)\s*\n\s+(User\s+riton|GSSAPIAuthentication\s+no)/
+          :content => /Host \*\.in2p3\.fr\s*\n\s+GSSAPIAuthentication\s+no\s*\n\s+User\s+riton/
         })
       end
 
