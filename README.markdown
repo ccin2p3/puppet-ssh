@@ -123,7 +123,7 @@ or
 
 ### Per user client configuration
 
-1. User's home is expected to be /home/bob
+** User's home is expected to be /home/bob **
 
 SSH configuration file will be `/home/bob/.ssh/config`.
 
@@ -136,7 +136,7 @@ SSH configuration file will be `/home/bob/.ssh/config`.
 }
 ```
 
-2. User's home is passed to define type
+** User's home is passed to define type **
 
 SSH configuration file will be `/var/lib/bob/.ssh/config` and puppet will 
 manage directory `/var/lib/bob/.ssh`.
@@ -151,7 +151,7 @@ manage directory `/var/lib/bob/.ssh`.
 }
 ```
 
-3. User's ssh directory should not be managed by the define type
+** User's ssh directory should not be managed by the define type **
 
 SSH configuration file will be `/var/lib/bob/.ssh/config`.
 
@@ -166,7 +166,7 @@ SSH configuration file will be `/var/lib/bob/.ssh/config`.
 }
 ```
 
-4. User's ssh config is specified with an absolute path
+** User's ssh config is specified with an absolute path **
 
 ```puppet
 ::ssh::client::config::user { 'bob':
