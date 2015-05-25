@@ -1,6 +1,6 @@
 #
 # Copyright (c) IN2P3 Computing Centre, IN2P3, CNRS
-# Contributor: Remi Ferrand <remi{dot}ferrand_at_cc(dot)in2p3.fr (2015)
+# Contributor: Remi Ferrand <remi{dot}ferrand_at_cc(dot)in2p3.fr> (2015)
 #
 define ssh::client::config::user(
   $ensure               = present,
