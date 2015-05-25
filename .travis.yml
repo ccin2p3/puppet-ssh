@@ -2,6 +2,7 @@
 branches:
   only:
     - feature/per_user_config
+    - feature/per_user_config_tmp
 language: ruby
 bundler_args: --without development
 script: 'bundle exec rake validate && bundle exec rake lint && SPEC_OPTS="--format documentation" bundle exec rake spec'
